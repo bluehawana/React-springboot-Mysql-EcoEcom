@@ -10,6 +10,8 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Assuming you want auto-generated IDs
     private Long id;
 
+    protected Order() {
+    }
     // Other fields
     private String name;
 
