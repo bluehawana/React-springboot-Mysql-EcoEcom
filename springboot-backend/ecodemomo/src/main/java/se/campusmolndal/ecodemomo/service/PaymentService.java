@@ -21,4 +21,8 @@ public class PaymentService {
         params.put("source", token);
         return Charge.create(params);
     }
+
+    public String createCheckoutSession() {
+        return "checkout-session-id";
+    }
 }

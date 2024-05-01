@@ -17,7 +17,7 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
         corsConfig.setAllowCredentials(true);
-        corsConfig.setAllowedOrigins(List.of("http://localhost:8089","http://localhost:3000")); // Replace with your allowed origins
+        corsConfig.setAllowedOrigins(List.of("http://localhost:8080","http://localhost:8089","http://localhost:3000","http://localhost:3001","http://localhost:3002","http://localhost:3003")); // Replace with your allowed origins
         corsConfig.setAllowedHeaders(Arrays.asList("Content-Type", "Authorization")); // Replace with your allowed headers
         corsConfig.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE")); // Replace with your allowed methods
 
